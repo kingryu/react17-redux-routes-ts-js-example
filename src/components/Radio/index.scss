@@ -1,0 +1,22 @@
+@import '../../styles/index';
+
+.radio-container{
+  display: inline-block;
+  cursor: pointer;
+  margin:0 16px 0 0;
+  .checked{
+    color:$primary;
+  }
+  .not-checked{
+    color:$text;
+  }
+  .radio-box{
+    padding: 0 8px 0 0;
+  }
+  &:hover .radio-box{
+    color:$primaryHover
+  }
+}
+.radio-group-container{
+  display: inline-block;
+}

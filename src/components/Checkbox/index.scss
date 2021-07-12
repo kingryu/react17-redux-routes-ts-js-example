@@ -1,0 +1,18 @@
+@import '../../styles/index';
+
+.checkbox-container{
+  display: inline-block;
+  cursor: pointer;
+  .checked{
+    color:$primary;
+  }
+  .not-checked{
+    color:$text;
+  }
+  .checkbox{
+    padding: 0 8px 0 0;
+  }
+  &:hover .checkbox{
+    color:$primaryHover
+  }
+}

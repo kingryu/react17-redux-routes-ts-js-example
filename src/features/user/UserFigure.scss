@@ -1,0 +1,43 @@
+@use 'theme';
+
+$block: 'user-figure';
+
+.#{$block} {
+  display: flex;
+  align-items: center;
+  height: 5.125rem;
+  padding: 0 6.4vw;
+  margin: 0;
+
+  background: theme.$surface;
+  color: theme.$on-surface;
+
+  text-align: left;
+}
+
+.#{$block}__info {
+  margin-left: 1rem;
+
+  color: #989ca3;
+}
+
+.#{$block}__spinner,
+.#{$block}__avatar {
+  display: block;
+
+  width: 3.125rem;
+  height: 3.125rem;
+
+  border-radius: 3.125rem;
+}
+
+.#{$block}__nickname {
+  display: block;
+
+  margin-left: 1rem;
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  color: #333;
+}

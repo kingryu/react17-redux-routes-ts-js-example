@@ -1,0 +1,47 @@
+@use 'sass:color';
+@use 'theme';
+
+$block: 'btn';
+
+.#{$block} {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 3.125rem;
+  padding: 0 1.5625rem;
+  border-radius: 3.125rem;
+  background: theme.$primary;
+  text-transform: uppercase;
+  color: theme.$on-primary;
+  &--hover {
+    // Keeps hover state on the JS side to make specificity
+    // of all modifier selectors even (0, 1, 0)
+    background: theme.$primary-dark;
+  }
+  &--disabled {
+    cursor: not-allowed;
+    background: color.change(theme.$primary-dark, $alpha: 0.5);
+  }
+  &--loading {
+    cursor: wait;
+  }
+}
+
+.#{$block}--outlined {
+  border: 1px solid theme.$primary;
+  background: none;
+  color: theme.$primary;
+  &.#{$block}--hover {
+    background: color.change(theme.$primary, $alpha: 0.08);
+  }
+}
+
+.#{$block}__loading-indicator {
+  font-size: 1.2em;
+  margin: 0 0.3em 0 0;
+}
+.#{$block}__text {
+  line-height: 1em;
+}

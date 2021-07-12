@@ -1,0 +1,47 @@
+.detailHeader {
+  background-image: url('./bg.svg');
+  padding: 23px 16px;
+  background-size: cover;
+  .detailTitle {
+    width: 100%;
+    margin: 0;
+    line-height: 27px;
+    white-space: break-spaces;
+    font-size: 22px;
+    font-weight: 500;
+    color: #333d48;
+  }
+  .detailText {
+    font-size: 14px;
+    font-weight: 400;
+    color: #858a91;
+    line-height: 16px;
+    margin-bottom: 0;
+  }
+  .detailStatus {
+    height:20px;
+    padding: 0 5px;
+    margin-top: 4px;
+    display: inline-block;
+    font-size: 12px;
+    color:#FFFFFF;
+    background-color: #DFAE79;
+    line-height: 20px;
+    border-radius: 2px;
+  }
+  .statusOther{
+    // opacity: 0.6;
+  }
+}
+
+:global {
+  .live-icon {
+    width: 10px;
+    height: 9px;
+    margin-right: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('../../../icons/equalizer.svg');
+    background-size: 100% 100%;
+  }
+}

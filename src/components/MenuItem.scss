@@ -1,0 +1,32 @@
+@use 'theme';
+
+$block: 'menu-item';
+
+.#{$block} {
+  position: relative;
+  display: flex;
+  overflow: auto; // creates a BFC
+  align-items: center;
+  height: 3.625rem;
+  padding: 0 1rem;
+  background: theme.$surface;
+  font-size: 0.875rem;
+  color: theme.$on-surface;
+}
+
+.#{$block}__icon {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.#{$block}__icon--before {
+  margin-right: 0.625rem;
+}
+
+.#{$block}__icon--after {
+  width: 1.334rem;
+  height: 1.334rem;
+  margin-right: -0.4rem;
+  color: #cfd3da;
+}

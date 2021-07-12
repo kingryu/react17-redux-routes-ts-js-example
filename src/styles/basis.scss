@@ -1,0 +1,70 @@
+// reset.css
+sub, sup{
+  line-height: 0;
+
+}
+
+body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre, form, fieldset, legend, input, button, textarea, hr{
+  margin: 0;
+  padding: 0;
+}
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+li{
+  list-style: none;
+}
+fieldset, img{
+  border: 0;
+}
+input, textarea{
+  outline-style: none;
+}
+input[type="text"], input[type="search"], input[type="password"]{
+  border-radius: 0;
+}
+textarea{
+  resize: none;
+}
+address, caption, cite, code, dfn, em, i, th, var{
+  font-style: normal;
+  font-weight: normal;
+}
+abbr, acronym{
+  border: 0;
+  font-variant: normal;
+}
+a{
+  text-decoration: none;
+  outline: none;
+}
+*{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+input::-webkit-input-placeholder {
+  color: #B4B9BF;
+}
+input::-moz-input-placeholder {
+  color: #B4B9BF;
+}
+input::-ms-input-placeholder {
+  color: #B4B9BF;
+}
+// 适配 iPhone X
+.iphonex_bottom_adaptation{
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+  &::after{
+    display: block;
+    content: '';
+    width: 100%;
+    height: constant(safe-area-inset-bottom);
+    height: env(safe-area-inset-bottom);
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    left: 0;
+    background: rgba(250,250,250,1);
+  }
+}

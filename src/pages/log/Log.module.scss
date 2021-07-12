@@ -1,0 +1,25 @@
+.container{
+  width:100%;
+  textarea {
+    margin: 5px 1%;
+    width:96%;
+  }
+  .button{
+    width:80%;
+    height:40px;
+    margin: 10px 10%;
+    box-sizing: border-box;
+    line-height: 40px;
+  }
+  .dialog{
+    width:90%;
+  }
+  .dialogContent{
+    margin: 20px 0px;
+    padding: 10px;
+    width:90%;
+  }
+  .pcContent{
+    margin: 10px;
+  }
+}

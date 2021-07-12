@@ -1,0 +1,66 @@
+{
+  "name": "react17-redux-routes-ts-js-example",
+  "version": "1.0.0",
+  "buildId": "1",
+  "description": "react hooks redux routes typescript javascript app html5 example create react app",
+  "main": "index.js",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.1.0",
+    "@rooks/use-visibility-sensor": "^4.11.0",
+    "@types/react-alert": "^5.2.0",
+    "@use-gesture/react": "^10.0.0-beta.13",
+    "axios": "^0.21.1",
+    "clsx": "^1.1.1",
+    "hash-wasm": "^4.5.0",
+    "react": "^17.0.1",
+    "react-app-polyfill": "^2.0.0",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.1.3",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/eslint-config-prettier": "^6.11.0",
+    "@types/eslint-plugin-prettier": "^3.1.0",
+    "@types/node": "^14.14.34",
+    "@types/prettier": "^2.2.3",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.2",
+    "@types/react-redux": "^7.1.16",
+    "@types/react-router-dom": "^5.1.7",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "husky": "^5.1.3",
+    "lint-staged": "^10.5.4",
+    "prettier": "2.2.1",
+    "react-scripts": "4.0.3",
+    "sass": "^1.32.8",
+    "typescript": "^4.2.3"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint --ignore-path .gitignore .",
+    "del": "node delNodeOldRes.js",
+    "copy": "node copy2node.js",
+    "push": "node push2node.js",
+    "i18n": "node updateI18n.js",
+    "publish": "npm run i18n&&npm run build&&npm run del&&npm run copy&&npm run push"
+  },
+  "engines": {
+    "node": ">=12.16.1"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "redux",
+    "routes",
+    "typescript",
+    "app",
+    "example"
+  ],
+  "author": "zhongdabing",
+  "license": "MIT"
+}

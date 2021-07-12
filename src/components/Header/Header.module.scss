@@ -1,0 +1,17 @@
+@import "../../styles/index";
+.container{
+  height: 26px;
+  line-height: 26px;
+  display: flex;
+  padding: 12px 16px 8px;
+  justify-content: center;
+  box-shadow: 0px 0px 1px #ECECEC;
+  .left{
+    width: 12px;
+  }
+  .center{
+    font-size: 18px;
+    color: $title;
+    font-weight: 500;
+  }
+}

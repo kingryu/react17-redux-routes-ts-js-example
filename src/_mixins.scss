@@ -1,0 +1,53 @@
+@mixin simple-form($block, $surface, $on-surface, $error) {
+  .#{$block} {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    background: $surface;
+    flex: auto;
+  }
+
+  .#{$block}__field{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.875rem;
+  }
+
+  .#{$block}__label {
+    font-size: 1rem;
+    color: $on-surface;
+  }
+
+  .#{$block}__input {
+    line-height: 2.625rem;
+    padding: 0;
+    border: none;
+    border-bottom: 0.5px solid #ececec;
+    outline: none;
+    margin: 0;
+    font-size: 1rem;
+    color: $on-surface;
+    &--invalid {
+      border-bottom-color: $error;
+    }
+    &::placeholder {
+      color: #b4b9bf;
+      opacity: 1;
+    }
+  }
+
+  .#{$block}__error {
+    position: absolute;
+    font-size: 0.75rem;
+    left: 0.25rem;
+    bottom: -0.25rem;
+    transform: translateY(100%);
+    color: $error;
+  }
+
+  .#{$block}__submit {
+    margin: 3.75rem 0 0;
+    font-size: 1.125rem;
+  }
+}

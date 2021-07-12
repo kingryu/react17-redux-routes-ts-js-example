@@ -1,0 +1,24 @@
+@use 'theme';
+
+$block: 'critical-error';
+
+// .#{$block} {
+
+// }
+
+.#{$block}__face {
+  font-size: 4rem;
+  line-height: 5rem;
+}
+
+.#{$block}__heading {
+  margin: 1.125rem 0 0;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: theme.$on-surface;
+}
+
+.#{$block}__message {
+  margin: 1rem 0 0;
+  color: #989ca3;
+}

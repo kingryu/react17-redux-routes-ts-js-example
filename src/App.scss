@@ -1,0 +1,22 @@
+@use 'sass:color';
+@use 'theme';
+
+$block: 'app';
+
+.#{$block} {
+  height: 100%;
+}
+
+*::selection {
+  background: color.change(theme.$primary, $alpha: 0.5);
+}
+
+button, a {
+  all: unset;
+  -webkit-tap-highlight-color: color.change(theme.$primary, $alpha: 0.12);
+}
+
+a {
+  color: theme.$primary;
+  cursor: pointer;
+}

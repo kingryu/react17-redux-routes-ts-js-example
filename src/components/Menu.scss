@@ -1,0 +1,24 @@
+$block: 'menu';
+
+.#{$block} {
+  padding: 0;
+  margin: 0;
+  font-size: 0.875rem;
+  list-style: none;
+}
+
+.#{$block}__menu-item {
+  &::after {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-bottom: 0.5px solid #eee;
+    pointer-events: none;
+  }
+  &:last-child::after {
+    content: none;
+  }
+}

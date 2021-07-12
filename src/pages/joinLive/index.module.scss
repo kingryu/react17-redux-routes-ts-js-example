@@ -1,0 +1,40 @@
+.container {
+  width: 100%;
+}
+.pcContainer{
+  height:460px;
+}
+.content {
+  .line {
+    margin: 30px 16px;
+    font-size: 16px;
+  }
+  .label {
+    font-weight: 400;
+    color: #333d48;
+    line-height: 22px;
+  }
+  .input {
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    font-size: 16px;
+    outline: none;
+    -webkit-appearance: none;
+    border: none;
+    border-bottom: solid 1px #ececec;
+    color:#333;
+    ::placeholder{
+      color: #b4b9bf;
+      opacity: 1;
+    }
+  }
+  .lineBtn{
+    margin: 30px 16px;
+    font-size: 16px;
+    color:#fff;
+  }
+  .btn{
+    width:100%;
+  }
+}

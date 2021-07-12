@@ -1,0 +1,18 @@
+@import-normalize;
+
+html, body, #root {
+  height: 100%;
+  font-family: "PingFangSC-Light", "Microsoft YaHei", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "SimHei", "Arial", "sans-serif";
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  user-select: none;
+}
+
+input, area {
+  user-select: initial;
+}
